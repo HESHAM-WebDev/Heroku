@@ -1,0 +1,188 @@
+MATH
+
+https://www.kindacode.com/article/displaying-math-symbols-in-react/
+https://katex.org/docs/supported.html
+https://en.wikibooks.org/wiki/LaTeX/Mathematics
+DIVISIONES USAR: \\ EJEMPLO: "\\dfrac{4}{3}"
+CONVERTIR STRING A html
+
+PROBLEMA CON RUTAS DE VERCEL
+https://stackoverflow.com/questions/64815012/why-does-react-router-not-works-at-vercel
+
+https://reactscript.com/react-html-parser/
+
+BANCO DE PREGUNTAS
+
+https://drive.google.com/drive/u/1/folders/1xB3UySR4meC93LhRcmuVbzmyqoOqPT_z?fbclid=IwAR1xKpSvUOc36t2xC1fBo8oxZfUZIHXCiF3S94WXQeNd5sy7R4QDn0iFvSw
+
+EJEMPLO DE OPTIONS
+
+            questions: [
+                {
+                    type: "radiogroup",
+                    name: "civilwar",
+                    title: "When was the Civil War?",
+                    choices: [
+                        "1750-1800", "1800-1850", "1850-1900", "1900-1950", "after 1950"
+                    ],
+                    choices: [
+                        "i (image)", "f (formula)", "t (text)", "1900-1950", "after 1950"
+                    ],
+                    correctAnswer: "1850-1900"
+                }
+            ]
+        }
+
+https://surveyjs.io/Examples/Library/?id=survey-quiz&platform=Reactjs&theme=modern#content-js
+
+var json = {
+    title: "American History",
+    showProgressBar: "bottom",
+    showTimerPanel: "top",
+    maxTimeToFinishPage: 10,
+    maxTimeToFinish: 25,
+    firstPageIsStarted: true,
+    startSurveyText: "Start Quiz",
+    pages: [
+        {
+            questions: [
+                {
+                    type: "html",
+                    html: "You are about to start quiz by history. <br/>You have 10 seconds for every page and 25 seconds for the whole survey of 3 questions.<br/>Please click on <b>'Start Quiz'</b> button when you are ready."
+                }
+            ]
+        }, {
+            questions: [
+                {
+                    type: "radiogroup",
+                    name: "civilwar",
+                    title: "When was the Civil War?",
+                    choices: [
+                        "1750-1800", "1800-1850", "1850-1900", "1900-1950", "after 1950"
+                    ],
+                    correctAnswer: "1850-1900"
+                }
+            ]
+        }, {
+            questions: [
+                {
+                    type: "radiogroup",
+                    name: "libertyordeath",
+                    title: "Who said 'Give me liberty or give me death?'",
+                    choicesOrder: "random",
+                    choices: [
+                        "John Hancock", "James Madison", "Patrick Henry", "Samuel Adams"
+                    ],
+                    correctAnswer: "Patrick Henry"
+                }
+            ]
+        }, {
+            maxTimeToFinish: 15,
+            questions: [
+                {
+                    type: "radiogroup",
+                    name: "magnacarta",
+                    title: "What is the Magna Carta?",
+                    choicesOrder: "random",
+                    choices: [
+                        "The foundation of the British parliamentary system", "The Great Seal of the monarchs of England", "The French Declaration of the Rights of Man", "The charter signed by the Pilgrims on the Mayflower"
+                    ],
+                    correctAnswer: "The foundation of the British parliamentary system"
+                }
+            ]
+        }
+    ],
+    completedHtml: "<h4>You have answered correctly <b>{correctedAnswers}</b> questions from <b>{questionCount}</b>.</h4>"
+};
+PROPOSAL FOR CHOISES
+
+data:{ 
+    id:"";
+    title:"título de la pregunta (si lo llevara)"
+    statement:"[array dividido por statemets]"
+    type:"esta trae el tipo de respuesta ya sea: T/F/I texto/fórmula/imagenes para darle formato desde Javascript"
+    option1:"primera opción",
+    option2:"segunda opción",
+    option3:"tercera opción",
+    option4:"cuarta opción",
+    option5:"quinta opción",
+    correct: "comparación de respuesta",
+    explanation: "explicación",
+    source: "de dónde salió la pregunta/ créditos al autor",
+    isDifficult: "si es una pregunta que ha fallado el 70% de los usuarios",
+    area: "matemática/lógica/lectura",
+    institution: "TEC/UCR/ETC"
+}
+
+# data:{ 
+#     id:"";
+#     title:"título de la pregunta (si lo llevara)"
+#     statement:"[array dividido por statemets]"
+#     type:"esta trae el tipo de respuesta ya sea: T/F/I texto/fórmula/imagenes para darle formato desde Javascript"
+#     option1:"primera opción",
+#     option2:"segunda opción",
+#     option3:"tercera opción",
+#     option4:"cuarta opción",
+#     option5:"quinta opción",
+#     correct: [f,f,f,t,f],
+#     explanation: "explicación",
+#     source: "de dónde salió la pregunta/ créditos al autor",
+#     isDifficult: "si es una pregunta que ha fallado el 70% de los usuarios",
+#     area: "matemática/lógica/lectura",
+#     institution: "TEC/UCR/ETC"
+# }
+
+answers:{
+    id:"id de la pregunta",
+    id_user: "id del usuario",
+    answer: "true/false (para correcta incorrecta)",
+    option: "respuesta enviada"
+    time: "tiempo que duró en responderla",
+    date: "fecha que la resolvió"
+}
+
+profile:{
+    name: "nombre",
+    last_name: "apellido",
+    sec_last_name: "segundo apellido",
+    email: "correo electrónico",
+    password: "contraseña",
+    isProblematic: "true/false (usuario problemático no tiene acceso a la plataforma)",
+    highschool_score:"",
+    cutUCR:"",
+    cutTEC:"",
+    cutUNA:"",
+    cutGBL:"corte global",
+    isUCR:"",
+    isTEC:"",
+    isUNA:"",
+}
+
+major_options: {
+    user_id:"",
+    TEC1:"",
+    TEC2:"",
+    UCR1:"",
+    UCR2:"",
+    UNA1:"",
+    UNA2:"",
+    year:""
+}
+
+real_cuts_{
+    user_id:"",
+    UCR:"",
+    TEC:"",
+    UNA:"",
+}
+
+
+    Delete the entire migrations folder.
+    Delete de database mysql -u root -e "DROP DATABASE example";
+    Create de database again mysql -u root -e "CREATE DATABASE example";
+    Initiallize the migrations again: pipenv run init
+    Create the migration files again: pipenv run migrate
+    Apply the migration files into your database pipenv run upgrade
+
+https://start.4geeksacademy.com/backend/deploy-heroku-posgres
+heroku addons:create heroku-postgresql:hobby-devy

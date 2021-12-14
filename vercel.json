@@ -1,0 +1,16 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/demo", "dest": "/" },
+    { "src": "/login", "dest": "/" },
+    { "src": "/register", "dest": "/" },
+    { "src": "/recover", "dest": "/" },
+    { "src": "/practice", "dest": "/" },
+    { "src": "/profile", "dest": "/" },
+    { "src": "/admin", "dest": "/" },
+    { "src": "/admin/register", "dest": "/" },
+    { "src": "/admin/create", "dest": "/" },
+    { "src": "/admin/dashboard", "dest": "/" },
+    { "src": "/admin/wait", "dest": "/" }
+  ]
+}

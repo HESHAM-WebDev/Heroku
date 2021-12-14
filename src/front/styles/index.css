@@ -1,0 +1,13 @@
+/* 
+    General Styles
+*/
+.bg-success{
+    background-color: #2ecc71 !important;
+}
+.bg-secondary{
+    background-color: #ececec !important;
+}
+
+#toasts_height{
+    width: 200px;
+}
